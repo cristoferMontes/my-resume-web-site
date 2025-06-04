@@ -1,0 +1,427 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <title>Cristofer Montes Lozada</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="external-assets/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/cards.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="bg-container">
+                <div class="bg-image active" style="background-image: url(img/bg/0.jpg);"></div>
+                <div class="bg-image" style="background-image: url(img/bg/1.jpg);"></div>
+                <div class="bg-image" style="background-image: url(img/bg/2.jpg);"></div>
+                <div class="bg-image" style="background-image: url(img/bg/3.jpg);"></div>
+                <div class="bg-image" style="background-image: url(img/bg/4.jpg);"></div>
+                <div class="bg-image" style="background-image: url(img/bg/5.jpg);"></div>
+            </div>
+            <div class="bg-color"></div>
+            <div class="header">
+                <div id="photo-container" class="circle">
+                    <img src="img/me.png" class="imagenzoom" alt="Foto del autor">
+                </div>    
+                <h1>Cristofer Montes</h1>
+                <h2 id="degree">Estudiante de Ingeniería en Sistemas Computacionales</h2>
+                <p id="description">
+                    Apasionado por la programación.
+                    Mi misión es colaborar en equipos multidisciplinarios en el diseño de soluciones tecnológicas eficientes
+                    y escalables para atender a problemas reales. Con el auge de la Inteligencia Artificial, mi visión es 
+                    dominar esta tecnología emergente para poder atender a nuevas necesidades con soluciones inovadoras. 
+                    El aprendizaje continuo y la excelencia técnica son dos de los valores que me mantienen comprometido en el
+                    desarrollo de nuevas habilidades en los ámbitos personal y profesional.
+                </p>
+                <div class="contact-header">
+                    <a href="https://www.linkedin.com/in/cristofer-montes-lozada/" target="_blank">
+                        <div class="icon-container linkedin"><i class="fa-brands fa-linkedin"></i></div>
+                    </a>
+                    <a href="mailto:cris.montes.lozada@gmail.com?subject=Revisé tu página web&body=Hola...">
+                        <div class="icon-container"><i class="fa-solid fa-envelope"></i></div>
+                    </a>
+                    <a href="https://github.com/cristoferMontes/" target="_blank">
+                        <div class="icon-container"><i class="fa-brands fa-github"></i></div>
+                    </a>
+                </div>
+                <a href="/docs/CV.pdf" target="_blank" id="cv"><div >Descarga mi CV</div></a>
+            </div>
+        </header>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#header">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+            </ul>
+        </nav>
+        <section id="projects">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects-container">   
+
+                <div class="card public-project">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Prototipo de urna electrónica</h3>
+                            <p class="card-subtitle">Trabajo Terminal</p>
+                            <span class="card-year">2024</span>
+                        </div>
+                        <p class="card-description">
+                            En este trabajo terminal, mi participación destacó en la investigación de algoritmos criptográficos 
+                            y sus fundamentos matemáticos para diseñar un sistema de voto electrónico con dos propiedades: 
+                            confidencialidad y voto anónimo. Colaboré en el diseño de la arquitectura e implementé en Python la 
+                            interfaz de usuario para el módulo de resultados, el cuál consiste en verificar la integridad, 
+                            mezclar, descifrar y contar los votos. Implementé el algoritmo para la distribución y reconstrucción 
+                            de la clave de descifrado utilizando el esquema de Secreto Compartido de Shamir. Diseñé e implementé 
+                            el algoritmo para la prueba de correcto mezclado de los votos. Apliqué configuraciones para el 
+                            aislamiento del sistema.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://github.com/cristoferMontes/BallotCastingMachine" class="github-btn" target="_blank">
+                            <i class="fa-brands fa-github"></i> Ver en Github
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="card public-project">
+                    <div class="card-content">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            VisionAlert: Prototipo de sistema para el monitoreo de ritmo cardiaco; control y monitoreo de temperatura 
+                            y nivel de llenado de agua de un tinaco
+                        </h3>
+                        <p class="card-subtitle">Curso de Instrumentación y Control</p>
+                        <span class="card-year">2023</span>
+                    </div>
+                    <p class="card-description">
+                        En este proyecto, participé proporcionando los cálculos para el diseño del circuito, armé el circuito 
+                        y programé el microcontrolador ATMega8535 para procesar las señales, implementé una aplicación de 
+                        escritorio con interfaz gráfica de usuario en C# con .Net Framework 4.7.2 para recibir y mostrar los 
+                        datos del microcontrolador utilizando un puerto de comunicación serial. Hice pruebas de funcionamiento 
+                        físicas y simuladas (Proteus).
+                    </p>
+                    <div class="card-footer">
+                        <a href="https://github.com/cristoferMontes/visionAlert" class="github-btn" target="_blank">
+                        <i class="fa-brands fa-github"></i> Ver en Github
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="card private-project">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Sistema para el diagnóstico de deficiencias en el tema de conjuntos matemáticos 
+                                utilizando diagramas de Venn
+                            </h3>
+                            <p class="card-subtitle">Servicio Social</p>
+                            <span class="card-year">2024</span>
+                        </div>
+                        <p class="card-description">
+                            En este proyecto, desarrollé en C# un sistema de escritorio con dos roles de acceso: alumno y profesor. 
+                            En el rol de alumno, implementé la interfaz para que los estudiantes resuelvan ejercicios de diagramas 
+                            de Venn, serializando los resultados en archivos cifrados. En el otro rol, el profesor puede visualizar 
+                            un resumen de resultados tras importar los datos de sus alumnos, donde se muestran los ejercicios 
+                            ordenados por tasa de error de forma descendente. Para autenticar al alumno, agregué un cliente SMTP 
+                            que le envía un código de verificación a su correo institucional. También agregué un filtro de búsqueda 
+                            por boleta para el despliegue de resultados individuales.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card public-project">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Sala de Chat</h3>
+                            <p class="card-subtitle">Curso de Aplicaciones para Comunicaciones en Red</p>
+                            <span class="card-year">2022</span>
+                        </div>
+                        <p class="card-description">
+                            Una sala de chat desarrollada con Java y Swing en la que apliqué los conocimientos aprendidos
+                            sobre multicasting y protocolo UDP. Se utilizaron sockets de multidifusión y sockets de 
+                            datagrama de la API de Java Networking.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://github.com/cristoferMontes/salaChat" class="github-btn" target="_blank">
+                            <i class="fa-brands fa-github"></i> Ver en Github
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card public-project">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Solución al problema del Producto de Matrices en Cadena</h3>
+                            <p class="card-subtitle">Curso de Análisis y Diseño de Algoritmos</p>
+                            <span class="card-year">2021</span>
+                        </div>
+                        <p class="card-description">
+                            El problema del 
+                            <a href="https://en.wikipedia.org/wiki/Matrix_chain_multiplication" target="_blank">
+                                Producto de Matrices en Cadena
+                            </a> es un problema de optimización en el que se busca la forma más eficiente de multiplicar una 
+                            secuencia de matrices, minimizando el número total de operaciones.
+                        </p>
+                        <p class="card-description">
+                            Para resolver este problema, programé un algoritmo en Java utilizando la técnica de diseño de 
+                            algoritmos conocida como Programación Dinámica.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://github.com/cristoferMontes/MCM" class="github-btn" target="_blank">
+                            <i class="fa-brands fa-github"></i> Ver en Github
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="skills">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-container">
+                
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Java</h3>
+                        </div>
+                        <div class="card-description">
+                            <div class="skill-detail">
+                                POO
+                            </div>
+                            <div class="skill-detail">
+                                Swing
+                            </div>
+                            <div class="skill-detail">
+                                Manejo de archivos
+                            </div>
+                            <div class="skill-detail">
+                                Manejo de errores y excepciones
+                            </div>
+                            <div class="skill-detail">
+                                Programación multihilo
+                            </div>
+                            <div class="skill-detail">
+                                Networking
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">C#</h3>
+                        </div>
+                        <div class="card-description">
+                            <div class="skill-detail">
+                                POO
+                            </div>
+                            <div class="skill-detail">
+                                Manejo de archivos
+                            </div>
+                            <div class="skill-detail">
+                                Manejo de errores y excepciones
+                            </div>
+                            <div class="skill-detail">
+                                WinForms
+                            </div>
+                            <div class="skill-detail">
+                                POE
+                            </div>
+                            <div class="skill-detail">
+                                .Net
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Python</h3>
+                        </div>
+                        <div class="card-description">
+                            <div class="skill-detail">
+                                POO
+                            </div>
+                            <div class="skill-detail">
+                                Tkinter
+                            </div>
+                            <div class="skill-detail">
+                                Manejo de archivos
+                            </div>
+                            <div class="skill-detail">
+                                Manejo de errores y excepciones
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">C</h3>
+                        </div>
+                        <div class="card-description">
+                            <div class="skill-detail">
+                                Estructuras con memoria dinámica
+                            </div>
+                            <div class="skill-detail">
+                                Estructuras de datos
+                            </div>
+                            <div class="skill-detail">
+                                Manejo de archivos
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Bases de datos</h3>
+                        </div>
+                        <div class="card-description">
+                            <div class="skill-detail">
+                                Modelo Entidad-Relación
+                            </div>
+                            <div class="skill-detail">
+                                Modelo Relacional
+                            </div>
+                            <div class="skill-detail">
+                                MySQL
+                            </div>
+                            <div class="skill-detail">
+                                SQLite
+                            </div>
+                            <div class="skill-detail">
+                                Oracle APEX
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Desarrollo Web</h3>
+                        </div>
+                        <div class="card-description">
+                            <div class="skill-detail">
+                                HTML
+                            </div>
+                            <div class="skill-detail">
+                                CSS
+                            </div>
+                            <div class="skill-detail">
+                                Vanilla Javascript
+                            </div>
+                            <div class="skill-detail">
+                                Despliegue de sitios web estáticos
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Control de versiones</h3>
+                        </div>
+                        <div class="card-description">
+                            <div class="skill-detail">
+                                Git
+                            </div>
+                            <div class="skill-detail">
+                                Github
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Microcontroladores</h3>
+                        </div>
+                        <div class="card-description">
+                            <div class="skill-detail">
+                                CodeVisionAVR
+                            </div>
+                            <div class="skill-detail">
+                                Puertos E/S
+                            </div>
+                            <div class="skill-detail">
+                                ADC
+                            </div>
+                            <div class="skill-detail">
+                                Interrupciones
+                            </div>
+                            <div class="skill-detail">
+                                Contadores y temporizadores
+                            </div>
+                            <div class="skill-detail">
+                                USART
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Scripting</h3>
+                        </div>
+                        <div class="card-description">
+                            <div class="skill-detail">
+                                Batch (básico)
+                            </div>
+                            <div class="skill-detail">
+                                Bash (básico)
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Criptografía</h3>
+                        </div>
+                        <div class="card-description">
+                            <div class="skill-detail">
+                                Cifrado AES
+                            </div>
+                            <div class="skill-detail">
+                                Cifrado ElGamal
+                            </div>
+                            <div class="skill-detail">
+                                Cifrado Paillier
+                            </div>
+                            <div class="skill-detail">
+                                Criptosistema RSA
+                            </div>
+                            <div class="skill-detail">
+                                Secreto Compartido de Shamir
+                            </div>
+                            <div class="skill-detail">
+                                Secreto Compartido de Blakey
+                            </div>
+                            <div class="skill-detail">
+                                Funciones Hash
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <p>Hecho con <span style="color: red;">&hearts;</span> por Cristofer Montes.</p>
+        </footer>
+        <script src="js/dynamic-bg-header.js"></script>
+    </body>
+    </html> 
